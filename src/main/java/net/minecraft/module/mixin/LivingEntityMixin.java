@@ -10,6 +10,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 
+@Pseudo
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
     @Shadow
