@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "net.minecraft.module.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "AnvilScreenHandlerMixin",
+    "EffectCommandMixin",
+    "EnchantCommandMixin",
+    "EnchantmentHelperMixin",
+    "EnchantmentMixin",
+    "ExperienceOrbEntityMixin",
+    "ItemEnchantmentsComponentBuilderMixin",
+    "ItemEnchantmentsComponentMixin",
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+	}
+}
