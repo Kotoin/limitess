@@ -29,7 +29,7 @@ public class EnchantmentMixin {
     }
 
     @Redirect (method = "getName(Lnet/minecraft/registry/entry/RegistryEntry;I)Lnet/minecraft/text/Text;", at = @At(value = "INVOKE", target = "Lnet/minecraft/text/MutableText;append(Lnet/minecraft/text/Text;)Lnet/minecraft/text/MutableText;", ordinal = 1))
-    private static MutableText method_2(MutableText instance, Text text, @Local(argsOnly = true) int l) {
-        return instance.append (l <= 10 ? Text.translatable("enchantment.level." + l) : l <= 399999 ? Text.translatable (method_1 (l)) : Text.translatable (String.valueOf (l)));
+    private static MutableText method_2(MutableText instance, Text text, @Local(argsOnly = true) int level) {
+        return instance.append (level <= 10 ? Text.translatable("enchantment.level." + l) : l <= 399999 ? Text.translatable (method_1 (level)) : Text.translatable (String.valueOf (level)));
     }
 } 
